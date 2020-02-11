@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 7px;
+}
+
+.item{
+    background-color: lightgreen;
+    border-radius: 5px 5px;
+    box-shadow: gray;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.item:nth-child(even){
+    background-color: darkorange;
+}
+
+.item:link{
+    text-decoration: none;
+    color: black;
+}
+
+.item:hover{
+    color: white;
+}

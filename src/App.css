@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Gameplay Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gameplay Regular'), url('Gameplay.woff') format('woff');
+}
+
+.App {
+  text-align: center;
+}
+
+.Title{
+  font-family: Gameplay Regular;
+  text-decoration: underline;
+  font-size: 40px;
+  color: #129fc2;
+}
