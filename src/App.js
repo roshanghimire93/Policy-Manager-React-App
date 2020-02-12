@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import PoliciesArray from './PoliciesArray';
 import 'tachyons';
-import {PoliciesList} from './PoliciesList'
 import SearchBox from './SearchBox';
 
 class App extends Component {
@@ -10,7 +9,7 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      PoliciesList: PoliciesList,
+      PoliciesList: [],
       searchfield: ''
     }
   }
@@ -19,11 +18,18 @@ class App extends Component {
     this.setState({searchfield: event.target.value})
   }
 
-
-
+  componentDidMount(){
+    fetch('https://my-json-server.typicode.com/roshanghimire93/demo/policies').then(response => {
+      return response.json()
+    })
+    .then(users => {
+      return this.setState({PoliciesList: users})
+    })
+  }
+  
   render(){
     const filteredlist = this.state.PoliciesList.filter(policy => {
-      return policy.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
+      return policy.title.toLowerCase().includes(this.state.searchfield.toLowerCase())
     })
     return (
       <div className="App">

@@ -6,7 +6,7 @@ const PoliciesArray = ({PoliciesList}) => {
     return (
         <div className='wrapper'>
             {PoliciesList.map(policy => {
-                return <Policies key = {policy.id} name = {policy.name} link = {policy.link}/>
+                return <Policies key = {policy.id} name = {policy.title} link = {policy.link}/>
             })
         }
         </div>

@@ -1,14 +1,12 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-class Policies extends Component{
-    render(){
+const Policies = ({id, link, name}) => {
         return (
             <div>
-                <a href={this.props.link} target='_blank' rel="noopener noreferrer" className = 'item grow'>
-                {this.props.name}</a>
+                <a href={link} target='_blank' rel="noopener noreferrer" className = 'item grow'>
+                {name}</a>
             </div>
         )
     }
-}
 
 export default Policies;
