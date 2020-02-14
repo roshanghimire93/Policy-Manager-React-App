@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.c9c11a51.chunk.css",
-    "main.js": "/static/js/main.ded9635d.chunk.js",
-    "main.js.map": "/static/js/main.ded9635d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4fb79185.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4fb79185.js.map",
-    "static/css/2.eb45ad44.chunk.css": "/static/css/2.eb45ad44.chunk.css",
-    "static/js/2.95dfed40.chunk.js": "/static/js/2.95dfed40.chunk.js",
-    "static/js/2.95dfed40.chunk.js.map": "/static/js/2.95dfed40.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.69adb8c831a0073b832aab34fbe34c1c.js": "/precache-manifest.69adb8c831a0073b832aab34fbe34c1c.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.eb45ad44.chunk.css.map": "/static/css/2.eb45ad44.chunk.css.map",
-    "static/css/main.c9c11a51.chunk.css.map": "/static/css/main.c9c11a51.chunk.css.map",
-    "static/js/2.95dfed40.chunk.js.LICENSE.txt": "/static/js/2.95dfed40.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/Gameplay.fca23534.woff",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/Policy-Manager-React-App/static/css/main.27d5ed80.chunk.css",
+    "main.js": "/Policy-Manager-React-App/static/js/main.a5e53ed4.chunk.js",
+    "main.js.map": "/Policy-Manager-React-App/static/js/main.a5e53ed4.chunk.js.map",
+    "runtime-main.js": "/Policy-Manager-React-App/static/js/runtime-main.5b5852f9.js",
+    "runtime-main.js.map": "/Policy-Manager-React-App/static/js/runtime-main.5b5852f9.js.map",
+    "static/css/2.eb45ad44.chunk.css": "/Policy-Manager-React-App/static/css/2.eb45ad44.chunk.css",
+    "static/js/2.95dfed40.chunk.js": "/Policy-Manager-React-App/static/js/2.95dfed40.chunk.js",
+    "static/js/2.95dfed40.chunk.js.map": "/Policy-Manager-React-App/static/js/2.95dfed40.chunk.js.map",
+    "index.html": "/Policy-Manager-React-App/index.html",
+    "precache-manifest.ce82d0b9d8efd91db2754bff09b6f750.js": "/Policy-Manager-React-App/precache-manifest.ce82d0b9d8efd91db2754bff09b6f750.js",
+    "service-worker.js": "/Policy-Manager-React-App/service-worker.js",
+    "static/css/2.eb45ad44.chunk.css.map": "/Policy-Manager-React-App/static/css/2.eb45ad44.chunk.css.map",
+    "static/css/main.27d5ed80.chunk.css.map": "/Policy-Manager-React-App/static/css/main.27d5ed80.chunk.css.map",
+    "static/js/2.95dfed40.chunk.js.LICENSE.txt": "/Policy-Manager-React-App/static/js/2.95dfed40.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Policy-Manager-React-App/static/media/Gameplay.fca23534.woff",
+    "static/media/logo.svg": "/Policy-Manager-React-App/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4fb79185.js",
+    "static/js/runtime-main.5b5852f9.js",
     "static/css/2.eb45ad44.chunk.css",
     "static/js/2.95dfed40.chunk.js",
-    "static/css/main.c9c11a51.chunk.css",
-    "static/js/main.ded9635d.chunk.js"
+    "static/css/main.27d5ed80.chunk.css",
+    "static/js/main.a5e53ed4.chunk.js"
   ]
 }
