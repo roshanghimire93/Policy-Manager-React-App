@@ -1,6 +1,6 @@
 {
   "name": "policy-manager",
-  "homeoage": "https://roshanghimire93.github.io/Policy-Manager-React-App",
+  "baseUrl": "https://roshanghimire93.github.io/Policy-Manager-React-App",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

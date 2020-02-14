@@ -31,30 +31,26 @@ class App extends Component {
   }
   
   render(){
-    const filteredlist = this.state.PoliciesList.filter(policy => {
-      return policy.title.toLowerCase().includes(this.state.searchfield.toLowerCase())
+    const {PoliciesList, searchfield} = this.state
+    const filteredlist = PoliciesList.filter(policy => {
+      return policy.title.toLowerCase().includes(searchfield.toLowerCase())
     })
-    if(this.state.PoliciesList.length === 0){
-      return(
-        <div className='tc'>
-          <img className='App-logo' src={logo} alt='logo'/>
-          <h1>Loading<span className='blink'>...</span></h1>
-        </div>
-      )
-    }
-    else{
-      return (
-        <div className='App'>
-          <h1 className='Title'>POLICIES</h1>
-          <ErrorBoundary>
-            <SearchBox searchChange = {this.onSearchChange}/>
-            <Scroll>
-              <PoliciesArray PoliciesList = {filteredlist}/>
-            </Scroll>
-          </ErrorBoundary>
-        </div>
-      );
-    }
+    return(!PoliciesList.length ?
+      <div className='tc'>
+        <img className='App-logo' src={logo} alt='logo'/>
+        <h1>Loading<span className='blink'>...</span></h1>
+      </div>
+    :
+      <div className='App'>
+        <h1 className='Title'>POLICIES</h1>
+        <ErrorBoundary>
+          <SearchBox searchChange = {this.onSearchChange}/>
+          <Scroll>
+            <PoliciesArray PoliciesList = {filteredlist}/>
+          </Scroll>
+        </ErrorBoundary>
+      </div>
+    )
   }
 }
 
