@@ -3,6 +3,7 @@ import Policies from './Policies'
 import './Policies.css'
 
 const PoliciesArray = ({PoliciesList}) => {
+
     return (
         <div className='wrapper'>
             {PoliciesList.map(policy => {

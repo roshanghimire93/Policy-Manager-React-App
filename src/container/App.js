@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import logo from './logo.svg'
-import PoliciesArray from './PoliciesArray';
+import PoliciesArray from '../component/PoliciesArray';
 import 'tachyons';
-import SearchBox from './SearchBox';
+import SearchBox from '../component/SearchBox';
+import ErrorBoundary from '../component/ErrorBoundary';
+import Scroll from '../component/Scroll';
 
 class App extends Component {
 
@@ -36,7 +38,7 @@ class App extends Component {
       return(
         <div className='tc'>
           <img className='App-logo' src={logo} alt='logo'/>
-          <h1>Loading..</h1>
+          <h1>Loading<span className='blink'>...</span></h1>
         </div>
       )
     }
@@ -44,8 +46,12 @@ class App extends Component {
       return (
         <div className='App'>
           <h1 className='Title'>POLICIES</h1>
-          <SearchBox searchChange = {this.onSearchChange}/>
-          <PoliciesArray PoliciesList = {filteredlist}/>
+          <ErrorBoundary>
+            <SearchBox searchChange = {this.onSearchChange}/>
+            <Scroll>
+              <PoliciesArray PoliciesList = {filteredlist}/>
+            </Scroll>
+          </ErrorBoundary>
         </div>
       );
     }
